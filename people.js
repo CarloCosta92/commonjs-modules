@@ -7,3 +7,15 @@ const yourName= require("./names.js");
 
 const yourHobbies= require("./hobbies.js")
 
+function personHobbies(){
+
+    const fullName = yourName();
+    const hobbies = yourHobbies();
+
+    return{
+        fullName: fullName,
+        hobbies: hobbies,
+    }
+}
+
+console.log(personHobbies());
